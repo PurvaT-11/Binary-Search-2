@@ -1,3 +1,8 @@
+"""
+if the nums at m is greater than the rightmost element, it is the wrapped around part and hence we can find the minimn in the rightmost part, else in the left part
+the TC for this is o(logn) as during each iteration, the search space is halved. The sc is contant space as we dont store anything apart from the answer
+"""
+
 class Solution(object):
     def findMin(self, nums):
         """

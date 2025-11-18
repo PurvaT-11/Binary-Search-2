@@ -1,3 +1,10 @@
+"""
+the tc for this solution if O(logn) as the search space is halved in each iteration, we check that if the num[mid] is less than the num[mid + 1], then we arein increasing slope and we can find he peak at right side,
+else if there is a drop, we can find the peak either way
+if the num[m] is not less than the num[mid + 1] we are bit above in the peak, so we move our search space to left, and not loose the mid, bcz it can petentially be our peak
+the sc for this is O(1) as we dont use additional space"""
+
+
 class Solution(object):
     def findPeakElement(self, nums):
         """
